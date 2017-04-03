@@ -191,6 +191,19 @@ if (defined('ENVIRONMENT'))
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
 
+
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD ADDITIONAL CONFIGS
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ *
+ */	
+
+require_once APPPATH.'/config.php';
+
 /*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE

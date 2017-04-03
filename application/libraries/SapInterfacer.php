@@ -29,11 +29,11 @@ class SapInterfacer {
 		try {
 			$this->sapCom = new COM("SAPbobsCOM.company") or die ("No connection");
 
-			$this->sapCom->server = "SAPSERVER";
-			$this->sapCom->CompanyDB = "PENTA_LIVE";
-			$this->sapCom->username = "dir002";
-			$this->sapCom->password = "nivek";
-			$this->sapCom->DbServerType = "6";
+			$this->sapCom->server = SAP_SERVER;
+			$this->sapCom->CompanyDB = COMPANY_DB;
+			$this->sapCom->username = USERNAME;
+			$this->sapCom->password = PASSWORD;
+			$this->sapCom->DbServerType = DBSERVER_TYPE;
 			
 			$lRetCode = $this->sapCom->Connect;
 
