@@ -8,6 +8,6 @@ class debugger extends REST_Controller {
 	}
 
 	public function index_get() {
-		$this->response(array('message'=>'Business Partner Client Successfully Added'), 200);
+		$this->response(array('message'=>'Sever successfully logged in'), 200);
 	}	
 }
